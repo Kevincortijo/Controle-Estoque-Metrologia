@@ -35,6 +35,35 @@ body {
   margin-left: 250px; 
 }
 
+.cadastro {
+    position: fixed;
+    top: 20px;  
+    right: 20px;
+    background-color: rgb(from color r g b);
+    color: black;
+    border: 2px solid rgb(253, 0, 0);
+    border-radius: 5px;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.flex-container {
+  display: flex;
+  background-color: rgb(from color r g b);
+}
+
+.flex-container > div {
+  margin: 5px;
+  padding: 100px;
+  width: 30%;
+  font-size: 20px;
+  border: 2px solid rgba(198, 193, 193, 0.353);
+  border-radius: 5px;
+}
+
+
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
@@ -52,8 +81,17 @@ body {
 
 <div class="main">
   <h2>Inspection Technology</h2>
+  <a href="#" class="cadastro">Nova Entrada/Saída</a>
+  <div class="flex-container">
+  <div style="background-color: #f40202ee">Em Estoque</div>
+  <div>Entradas Hoje</div>
+  <div>Saídas Hoje</div>  
+</div>
 </div>
    
+
+
+
 </body>
 </html> 
 
