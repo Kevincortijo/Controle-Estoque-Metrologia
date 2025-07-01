@@ -7,6 +7,10 @@ body {
   font-family: "Lato", sans-serif;
 }
 
+.frame {
+  display: flex;
+  flex-direction: row;
+}
 .sidenav {
   height: 100%;
   width: 225px;
@@ -32,7 +36,7 @@ body {
 }
 
 .main {
-  margin-left: 250px; 
+  margin-left: 225px; 
 }
 
 .cadastro {
@@ -51,26 +55,61 @@ body {
 
 .flex-container {
   display: flex;
-  background-color: rgb(from color r g b);
+  color: #ffffff; 
+
 }
 
 .flex-container > div {
+  background-color:#f40202ee;
   margin: 5px;
-  padding: 100px;
+  padding: 50px;
   width: 30%;
   font-size: 20px;
   border: 2px solid rgba(198, 193, 193, 0.353);
   border-radius: 5px;
+  box-shadow: rgba(128, 124, 124, 0.811) 3px 3px 5px 1px;
 }
 
+.tabela {
+ 
+  border-collapse: collapse;
+  width: 80rem; 
+  margin: 10px auto 0 auto;
+  box-sizing: border-box;
+  box-shadow: rgba(128, 124, 124, 0.811) 3px 3px 5px 1px;
+  
+  
+}
+
+
+.tabela th, .tabela td {
+  border: 1px solid #7d747458;
+  padding: 10px;
+  text-align: center;
+  color: #3c3939;
+}
+
+.tabela caption {
+  border: 1px solid #7d747458;
+  border-radius: 5px;
+  text-align: left;
+  margin-bottom: 5px;
+  color: #000000ee;
+  padding: 10px;
+  font-weight: bold;
+  box-shadow: rgba(128, 124, 124, 0.811) 3px 3px 3px 1px;
+}
 
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
 }
+
+
 </style>
 </head>
 <body>
+<div class="frame">
 
 <div class="sidenav">
   <a href="#">Estoque</a>
@@ -83,12 +122,53 @@ body {
   <h2>Inspection Technology</h2>
   <a href="#" class="cadastro">Nova Entrada/Saída</a>
   <div class="flex-container">
-  <div style="background-color: #f40202ee">Em Estoque</div>
+  <div>Em Estoque</div>
   <div>Entradas Hoje</div>
-  <div>Saídas Hoje</div>  
+  <div>Saídas Hoje</div> 
 </div>
+
+<table class="tabela">
+  <caption>Itens em Estoque</caption>
+    <thead>
+        <tr>
+            <th>Item</th>
+            <th>Código</th>
+            <th>Quantidade</th>
+            <th>Próxima Compra</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>HDMI</td>
+            <td>2405978</td>
+            <td>5</td>
+            <td>110 dias</td>
+        </tr>
+        <tr>
+            <td>VGA</td>
+            <td>787098</td>
+            <td>20</td>
+            <td>40 dias</td>
+        </tr>
+        <tr>
+            <td>USB 3.0</td>
+            <td>21695</td>
+            <td>10</td>
+            <td>119 dias</td>
+        </tr>
+        <tr>
+            <td>DVI - RGB</td>
+            <td>EA155151</td>
+            <td>5</td>
+            <td>90 dias</td>
+        </tr>
+    </tbody>
+</table>
+
 </div>
-   
+
+
+</div>
 
 
 
