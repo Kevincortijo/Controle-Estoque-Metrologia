@@ -1,0 +1,29 @@
+<div class="login-container">
+  <div class="login-box">
+    <img src="assets/logo-lg.png" alt="LG Logo" class="logo" />
+
+    <form (ngSubmit)="onLogin()" #loginForm="ngForm">
+      <input
+        type="text"
+        name="username"
+        [(ngModel)]="username"
+        placeholder="User"
+        required
+      />
+      <input
+        type="password"
+        name="password"
+        [(ngModel)]="password"
+        placeholder="Password"
+        required
+      />
+      <button type="submit">Login</button>
+    </form>
+  </div>
+
+  <footer class="footer">
+    <img src="assets/logo-lg-electronics.png" alt="LG Electronics" />
+    <img src="assets/logo-dx.png" alt="DX Academy" />
+    <p>Copyright ©2025 DX Academy</p>
+  </footer>
+</div>
