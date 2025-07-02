@@ -1,5 +1,5 @@
 import { Routes } from '@angular/router';
-import { Home } from '../home/home.component';
+import { Home } from '../pages/home/home.component'
 import { Sidebar } from '../components/sidebar/sidebar.component';
 import { Login } from '../pages/login/login.component';
 import { Moving } from '../pages/moving/moving.component';
@@ -30,5 +30,9 @@ export const routes: Routes = [
     {
         path:'register',
         component:Register
+    },
+    {
+        path: 'sidebar-preview',
+        component:Sidebar
     }
 ];
