@@ -5,6 +5,7 @@ import { Login } from '../pages/login/login.component';
 import { Moving } from '../pages/moving/moving.component';
 import { Overview } from '../pages/overview/overview.component';
 import { Register } from '../pages/register/register.component';
+import { Table } from '../components/table/table.component';
 
 export const routes: Routes = [
     {
@@ -34,5 +35,9 @@ export const routes: Routes = [
     {
         path: 'sidebar-preview',
         component:Sidebar
+    },
+    {
+        path: 'table-preview',
+        component: Table
     }
 ];
