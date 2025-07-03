@@ -1,29 +1,23 @@
-<div class="login-container">
-  <div class="login-box">
-    <img src="lg_free-.png" alt="LG Logo" class="logo" />
+<div class="body">
+  <div class="container">
+    <div class="form-box">
+      <div class="left">
+        <div class="logo">Controle de Estoque</div>
+        <div class="arrow-button">→</div>
+      </div>
+      <div class="right">
+        <button class="close">X</button>
+        <form>
+          <label for="usuario">LOGIN</label>
+          <input type="text" id="usuario" placeholder="Digite seu usuário" />
 
-    <form (ngSubmit)="onLogin()" #loginForm="ngForm">
-      <input
-        type="text"
-        name="username"
-        [(ngModel)]="username"
-        placeholder="User"
-        required
-      />
-      <input
-        type="password"
-        name="password"
-        [(ngModel)]="password"
-        placeholder="Password"
-        required
-      />
-      <button type="submit">Login</button>
-    </form>
+          <label for="senha">SENHA</label>
+          <input type="password" id="senha" placeholder="Digite sua senha" />
+
+
+          <button type="submit" class="entrar">ENTRAR</button>
+        </form>
+      </div>
+    </div>
   </div>
-
-  <footer class="footer">
-    <img src="assets/logo-lg-electronics.png" alt="LG Electronics" />
-    <img src="assets/logo-dx.png" alt="DX Academy" />
-    <p>Copyright ©2025 DX Academy</p>
-  </footer>
 </div>
