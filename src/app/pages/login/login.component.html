@@ -1,18 +1,30 @@
+
 <div class="body">
   <div class="container">
     <div class="form-box">
       <div class="left">
-        <div class="logo">Controle de Estoque</div>
+        <div class="logo">Controle <br>de<br> Estoque</div><br>
         <div class="arrow-button">→</div>
       </div>
       <div class="right">
-        <button class="close">X</button>
         <form>
           <label for="usuario">LOGIN</label>
-          <input type="text" id="usuario" placeholder="Digite seu usuário" />
+          <input
+          type="text"
+          name="username"
+          [(ngModel)]="username"
+          placeholder="User"
+          required
+      />
 
           <label for="senha">SENHA</label>
-          <input type="password" id="senha" placeholder="Digite sua senha" />
+          <input
+          type="password"
+          name="password"
+          [(ngModel)]="password"
+          placeholder="Password"
+          required
+          />
 
 
           <button type="submit" class="entrar">ENTRAR</button>
