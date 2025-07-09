@@ -1,1 +1,12 @@
-<router-outlet />
+<ng-container *ngIf="!hideSidebar">
+  <app-sidebar></app-sidebar>
+</ng-container>
+
+<!-- Conteúdo principal ao lado da sidebar -->
+<div class="main-content" [class.full-width]="hideSidebar">
+  <router-outlet></router-outlet>
+</div>
+
+
+
+

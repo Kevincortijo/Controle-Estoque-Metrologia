@@ -1,0 +1,33 @@
+.resume {
+      margin-left: 240px;
+      padding: 2rem;
+      flex: 1;
+    }
+
+    .cabecalho {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 2rem;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    .cabecalho h1 {
+      font-size: 1.8rem;
+      margin: 0;
+      flex: none;
+    }
+
+    .button {
+      background-color: var(--primary-color);
+      color: white;
+      border: none;
+      padding: 0.6rem 1rem;
+      border-radius: 8px;
+      font-weight: 600;
+      text-decoration: none;
+      cursor: pointer;
+      align-self: flex-start;
+    }
+
