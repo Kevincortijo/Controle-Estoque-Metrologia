@@ -1,0 +1,18 @@
+.sidenav {
+  width: auto;
+  height: 100vh;
+  margin: 0;
+  // border: 1px solid #555;
+  /* The background property is added to clearly distinguish the borders between drawer and main
+     content */
+  background: #eee;
+}
+
+mat-drawer {
+  background-color: #1f2937;
+  color: white;
+  width: 260px;
+  // box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+  border-right: 1px solid #A50034;
+  padding-top: 1rem;
+}
