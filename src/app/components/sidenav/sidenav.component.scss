@@ -2,16 +2,13 @@
   width: auto;
   height: 100vh;
   margin: 0;
-  // border: 1px solid #555;
-  /* The background property is added to clearly distinguish the borders between drawer and main
-     content */
   background: #eee;
 }
 
 mat-drawer {
+  border-radius: 0;
   background-color: #A50034;
   color: white;
   width: 260px;
-  // box-shadow: 2px 0 5px rgba(0,0,0,0.1);
   padding-top: 1rem;
 }
