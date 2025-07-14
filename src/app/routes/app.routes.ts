@@ -1,6 +1,5 @@
 import { Routes } from '@angular/router';
 import { Home } from '../pages/home/home.component';
-import { Sidebar } from '../components/sidebar/sidebar.component';
 import { Login } from '../pages/login/login.component';
 import { Moving } from '../pages/moving/moving.component';
 import { Overview } from '../pages/overview/overview.component';
@@ -15,7 +14,6 @@ export const routes: Routes = [
     {path:'overview', component: Overview},
     {path:'register', component: Register},
     
-    {path: 'sidebar-preview', component: Sidebar},
     {path: 'sidenav-preview', component: Sidenav},
     {path: 'table-preview', component: Table},
     
