@@ -3,7 +3,7 @@ import { Table } from "../../components/table/table.component";
 
 @Component({
   selector: 'app-home',
-  imports: [Table],
+  imports: [],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss'
 })
