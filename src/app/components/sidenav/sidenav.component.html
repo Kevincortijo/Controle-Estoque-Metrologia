@@ -1,8 +1,12 @@
-<mat-drawer-container class="sidenav">
-  <mat-drawer mode="side" opened>
-    <app-sidenav-content></app-sidenav-content>
-  </mat-drawer>
-  <mat-drawer-content> 
-    Main content
-  </mat-drawer-content>
-</mat-drawer-container>
+@if (!isloginpage()) {
+  <mat-drawer-container class="sidenav">
+    <mat-drawer mode="side" opened>
+      <app-sidenav-content></app-sidenav-content>
+    </mat-drawer>
+    <mat-drawer-content> 
+      <router-outlet></router-outlet>
+    </mat-drawer-content>
+  </mat-drawer-container>
+} @else {
+  <router-outlet></router-outlet>
+}
