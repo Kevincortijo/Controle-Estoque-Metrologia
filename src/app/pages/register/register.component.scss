@@ -1,0 +1,35 @@
+
+.resume {
+  margin-left: 0;
+  padding: 2rem;
+  flex: 1;
+}
+
+.cabecalho {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.cabecalho h1 {
+  font-size: 1.8rem;
+  margin: 0;
+  flex: none;
+}
+
+// .cadastro {
+//   display: flex;
+//   justify-content: flex-start;
+//   // align-items: center;
+//   margin-bottom: 1rem;
+//   flex-wrap: wrap;
+//   gap: 1rem;
+// }
+
+// .Nome_item input {
+//   padding: 10px 200px;
+//   text-align: left;
+// }

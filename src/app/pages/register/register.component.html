@@ -1,1 +1,52 @@
-<p>register.component works!</p>
+<div class="resume">
+    <div class="cabecalho">
+      <h1>Inspection Technology</h1>
+    </div>
+    <form>
+        <fieldset class="fieldset">
+            <legend>Cadastro de Item</legend>
+            <!-- <label for="file-upload" class="custom-file-upload">
+                <i class="fa fa-cloud-upload"></i> Escolher Imagem
+            </label>
+            <input id="file-upload" type="file" accept="image/*"/> -->
+            <div class="cadastro">
+
+                <div class="Nome_item">
+                    <label for="Nome">Nome</label><br>
+                    <input type="text" class="form-control" id="Nome" placeholder="Nome do Item">
+                </div>
+          
+                <div class="partnumber">
+                    <label for="partnumber">Código</label><br>
+                    <input type="text" class="codigo" id="partnumber" placeholder="Código do Item">
+                </div>
+
+                <div class="quantidade">
+                    <label for="quantidade_item">Quantidade</label><br>
+                    <input type="number" class="number" id="Quantidade" placeholder="0">
+                </div>
+
+            </div>
+            
+            <div class="form-group">
+                <label for="valor_item">Preço Unitário</label><br>
+                <input type="text" name="valor_item" id="valor_item" placeholder="0,00" oninput="mascaraMoeda(event);"
+                    value="R$">
+            </div>
+            <div class="descricao">
+                <div class="descricao">
+                    <label for="descricao_item">Descrição detalhada</label><br>
+                    <textarea id="descricao_item" name="observacao" rows="5" cols="33" placeholder="Spec. do item"></textarea>
+                </div>
+            </div>
+                <button type="submit" class="btn btn-primary">Cadastrar</button>
+        </fieldset>
+    </form>
+</div>
+
+
+
+
+
+
+
