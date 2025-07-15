@@ -1,7 +1,6 @@
-/* You can add global styles to this file, and also import other style files */
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+// html, body { height: 100%; }
+// body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
 :root {
       --primary-color: #A50034;
@@ -10,4 +9,17 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
       --text-color: #222222;
       --font-family: 'Inter', sans-serif;
       --border-color: #0000003b;
+    }
+
+        * {
+      margin: 0; 
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: var(--font-family);
+      background-color: var(--background-color);
+      color: var(--text-color);
+
     }
