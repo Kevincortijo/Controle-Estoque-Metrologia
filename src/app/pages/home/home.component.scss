@@ -1,65 +1,123 @@
-.body {
-  font-family: "Lato", sans-serif;
-  transition: background-color .5s;
-  background-color: rgb(255, 255, 255);
+* {
+  margin: 0; 
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.sidenav {
-  height: 100%;
-  width: 0;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  background-color: #f80000;
-  overflow-x: hidden;
-  transition: 0.5s;
-  padding-top: 60px;
+body {
+  font-family: var(--font-family);
+  background-color: var(--background-color);
+  color: var(--text-color);
+
 }
 
-.sidenav a {
-  padding: 8px 8px 8px 32px;
+.resume {
+  margin-left: 0;
+  padding: 2rem;
+  flex: 1;
+}
+
+.cabecalho {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.cabecalho h1 {
+  font-size: 1.8rem;
+  margin: 0;
+  flex: none;
+}
+
+.button {
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  padding: 0.6rem 1rem;
+  border-radius: 8px;
+  font-weight: 600;
   text-decoration: none;
-  font-size: 25px;
-  color: #b40000;
-  display: block;
-  transition: 0.5s;
+  cursor: pointer;
+  align-self: flex-start;
 }
 
-.sidenav a:hover {
-  color: #00000090;
+.flexbox {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  gap: 2rem;
+  flex-wrap: wrap;
 }
 
-.sidenav .closebtn {
-  position: absolute;
-  top: 0;
-  right: 25px;
-  font-size: 36px;
-  margin-left: 50px;
+.info-box {
+  flex: 1;
+  min-width: 150px;
+  background-color: var(--primary-color);
+  padding: 2.5rem;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
 }
 
-#main {
-  transition: margin-left 0.5s;
-  padding: 16px;
+.info-box div {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
 }
 
-#cadastro {
-    position: fixed;
-    top: 30px;;  
-    right: 20px;
-    background-color: white;
-    color: black;
-    border: 2px solid rgb(253, 0, 0);
-    padding: 10px 20px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-  
-    
-
+.info-box p {
+  font-size: 2.5rem;
+  color: var(--card-bg);
+  margin: 0;
 }
 
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
+.tables {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+caption {
+  background-color: var(--card-bg);
+  font-weight: bold;
+  text-align: left;
+  padding: 0.75rem;
+  border: 1px solid var(--border-color);
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+th, td {
+  padding: 0.75rem;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background-color: var(--card-bg);
+}
+
+@media (max-width: 768px) {
+  .sidebar {
+    display: none;
+  }
+  .resume {
+    margin-left: 0;
+    padding: 1rem;
+  }
+  .cabecalho {
+    flex-direction: column;
+  }
+  .flexbox {
+    flex-direction: column;
+  }
 }
