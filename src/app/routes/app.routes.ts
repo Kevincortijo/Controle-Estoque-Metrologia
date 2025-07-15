@@ -17,5 +17,5 @@ export const routes: Routes = [
     {path: 'sidenav-preview', component: Sidenav},
     {path: 'table-preview', component: Table},
     
-    {path:'',component:Login},
+    {path:'', redirectTo:'login', pathMatch:'full'},
 ];
