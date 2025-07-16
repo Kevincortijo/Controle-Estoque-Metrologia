@@ -1,1 +1,21 @@
-<p>report.component works!</p>
+<mat-card class="export-card">
+  <h2>Exportar Filtros do Relatório</h2>
+
+  <mat-form-field appearance="outline" class="full-width">
+    <mat-label>Formato do arquivo</mat-label>
+    <mat-select [(value)]="selectedFormat">
+      <mat-option *ngFor="let format of formats" [value]="format.value">
+        {{ format.label }}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+
+  <button
+    mat-raised-button
+    color="primary"
+    (click)="export()"
+    [disabled]="!selectedFormat"
+  >
+    Baixar Arquivo
+  </button>
+</mat-card>
