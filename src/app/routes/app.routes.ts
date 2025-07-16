@@ -6,12 +6,14 @@ import { Overview } from '../pages/overview/overview.component';
 import { Register } from '../pages/register/register.component';
 import { Table } from '../components/table/table.component';
 import { Sidenav } from '../components/sidenav/sidenav.component';
+import { Report } from '../pages/report/report.component';
 
 export const routes: Routes = [
     {path:'login', component:Login},
     {path:'home', component: Home},
-    {path:'moving', component: Moving},
     {path:'overview', component: Overview},
+    {path:'moving', component: Moving},
+    {path:'report', component: Report},
     {path:'register', component: Register},
     
     {path: 'sidenav-preview', component: Sidenav},
