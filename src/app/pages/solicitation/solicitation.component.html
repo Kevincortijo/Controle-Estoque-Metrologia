@@ -1,1 +1,29 @@
-<p>solicitation.component works!</p>
+<!-- requisicao.component.html -->
+<div class="form-container">
+  <mat-form-field appearance="fill">
+    <mat-label>Usuário</mat-label>
+    <input matInput placeholder="Digite o nome do usuário">
+  </mat-form-field>
+
+  <mat-form-field appearance="fill">
+    <mat-label>Setor</mat-label>
+    <input matInput placeholder="Digite o setor">
+  </mat-form-field>
+
+  <mat-form-field appearance="fill">
+    <mat-label>Item</mat-label>
+    <mat-select>
+      <mat-option *ngFor="let item of itens" [value]="item">{{ item }}</mat-option>
+    </mat-select>
+  </mat-form-field>
+
+  <mat-form-field appearance="fill">
+    <mat-label>Quantidade</mat-label>
+    <input matInput type="number" placeholder="0">
+  </mat-form-field>
+
+  <mat-form-field appearance="fill" class="justificativa">
+    <mat-label>Justificativa</mat-label>
+    <textarea matInput rows="5" placeholder="Descreva a justificativa"></textarea>
+  </mat-form-field>
+</div>
