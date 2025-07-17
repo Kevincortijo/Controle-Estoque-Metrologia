@@ -18,4 +18,5 @@ export const routes: Routes = [
     {path: 'table-preview', component: Table},
     
     {path:'', redirectTo:'login', pathMatch:'full'},
+    {path:'**', redirectTo:'login'},
 ];
