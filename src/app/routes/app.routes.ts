@@ -11,8 +11,9 @@ import { Solicitation } from '../pages/solicitation/solicitation.component';
 export const routes: Routes = [
     {path:'login', component:Login},
     {path:'home', component: Home},
-    {path:'moving', component: Moving},
     {path:'overview', component: Overview},
+    {path:'moving', component: Moving},
+    {path:'report', component: Report},
     {path:'register', component: Register},
     {path:'solicitation', component: Solicitation},
     

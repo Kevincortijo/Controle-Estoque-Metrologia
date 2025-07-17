@@ -1,0 +1,13 @@
+.export-card {
+  max-width: 400px;
+  margin: 80px auto;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  text-align: center;
+}
+
+.full-width {
+  width: 100%;
+}
