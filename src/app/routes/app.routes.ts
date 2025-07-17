@@ -6,6 +6,7 @@ import { Overview } from '../pages/overview/overview.component';
 import { Register } from '../pages/register/register.component';
 import { Table } from '../components/table/table.component';
 import { Sidenav } from '../components/sidenav/sidenav.component';
+import { Report } from '../pages/report/report.component';
 import { Solicitation } from '../pages/solicitation/solicitation.component';
 
 export const routes: Routes = [
