@@ -7,5 +7,8 @@ import { Component } from '@angular/core';
   styleUrl: './register.component.scss'
 })
 export class Register {
+onClose() {
+throw new Error('Method not implemented.');
+}
 
 }

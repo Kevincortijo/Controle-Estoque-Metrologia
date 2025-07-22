@@ -1,0 +1,105 @@
+
+.Formulario {
+  margin-top: 6rem;
+
+}   
+
+form {
+  max-width: 900px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+}
+
+.fieldset {
+  border: 2px solid #A50034;
+  border-radius: 10px;
+  padding: 1.5rem;
+}
+
+legend {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #A50034;
+  padding: 0 1rem;
+}
+
+.cadastro {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.cadastro > div {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-weight: 600;
+//   margin-bottom: 0.08rem;
+  
+}
+
+input[type="text"],
+input[type="number"],
+textarea {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  transition: border 0.2s ease-in-out;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus,
+textarea:focus {
+  border-color: #A50034;
+  outline: none;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.descricao {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+.btn {
+  padding: 0.6rem 1.5rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary {
+  background-color: #A50034;
+  color: #fff;
+  margin-right: 1rem;
+}
+
+.btn-primary:hover {
+  background-color: #8b002b;
+}
+
+.btn-secundary {
+  background-color: #ccc;
+  color: #222;
+}
+
+.btn-secundary:hover {
+  background-color: #bbb;
+}
+
+button {
+  margin-top: 0.5rem;
+}
