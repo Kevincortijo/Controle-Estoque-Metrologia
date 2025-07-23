@@ -44,6 +44,12 @@ body {
   align-self: flex-start;
 }
 
+.logo img {
+  width: 50px; 
+  height: auto;
+}
+
+
 .flexbox {
   display: flex;
   justify-content: space-between;
