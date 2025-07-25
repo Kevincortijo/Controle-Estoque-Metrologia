@@ -8,6 +8,7 @@ import { Table } from '../components/table/table.component';
 import { Sidenav } from '../components/sidenav/sidenav.component';
 import { Report } from '../pages/report/report.component';
 import { Solicitation } from '../pages/solicitation/solicitation.component';
+import { MaterialOutput } from '../pages/material-output/material-output.component';
 
 export const routes: Routes = [
     {path:'login', component:Login},
@@ -17,6 +18,8 @@ export const routes: Routes = [
     {path:'report', component: Report},
     {path:'register', component: Register},
     {path:'solicitation', component: Solicitation},
+    {path:'material-output', component: MaterialOutput},
+
     
     {path: 'sidenav-preview', component: Sidenav},
     {path: 'table-preview', component: Table},
