@@ -1,6 +1,8 @@
 nav {
-  padding-top: 1.4rem;
-  font-size: 18px;
+    padding-top: 1.4rem;
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
 }
   
 ul {
@@ -29,9 +31,9 @@ a:hover {
 }
   
 .material-icons {
-font-size: 20px;
+    font-size: 20px;
 }
 
-.logo {
-
+img {
+    
 }
