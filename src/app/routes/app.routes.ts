@@ -4,10 +4,9 @@ import { Login } from '../pages/login/login.component';
 import { Moving } from '../pages/moving/moving.component';
 import { Overview } from '../pages/overview/overview.component';
 import { Register } from '../pages/register/register.component';
-import { Table } from '../components/table/table.component';
-import { Sidenav } from '../components/sidenav/sidenav.component';
 import { Report } from '../pages/report/report.component';
 import { Solicitation } from '../pages/solicitation/solicitation.component';
+import { Profile } from '../pages/profile/profile.component';
 
 export const routes: Routes = [
     {path:'login', component:Login},
@@ -17,10 +16,8 @@ export const routes: Routes = [
     {path:'report', component: Report},
     {path:'register', component: Register},
     {path:'solicitation', component: Solicitation},
-    
-    {path: 'sidenav-preview', component: Sidenav},
-    {path: 'table-preview', component: Table},
-    
+    {path:'profile', component: Profile},
+        
     {path:'', redirectTo:'login', pathMatch:'full'},
     {path:'**', redirectTo:'login'},
 ];
