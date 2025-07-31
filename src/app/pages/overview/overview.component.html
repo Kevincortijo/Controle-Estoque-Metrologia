@@ -1,13 +1,24 @@
 <div class="resume">
     <div class="cabecalho">
       <h1>Estoque</h1>
+      <div class="botoes">
+      <a routerLink="/register" class="button">
+        <img src="add.png" alt="add" class="icon"/>
+        Cadastro de Item
+      </a>
+      <button class="exportar">
+        <img src="excel.png" alt="Exportar" class="icon"/>
+        Exportar
+      </button>
+
+      </div>
     </div>
 
 
 <div class="estoque-dashboard-container">
   <mat-form-field>
     <mat-label>Filter</mat-label>
-    <input matInput (keyup)="applyFilter($event)" placeholder="Ex. Mia" #input>
+    <input matInput (keyup)="applyFilter($event)" placeholder="Ex. HDMI" #input>
   </mat-form-field>
 
   <div class="mat-elevation-z8">
