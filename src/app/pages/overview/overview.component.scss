@@ -1,3 +1,26 @@
+
+.resume {
+  margin-left: 0;
+  padding: 2rem;
+  flex: 1;
+}
+
+.cabecalho {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.cabecalho h1 {
+  font-size: 1.8rem;
+  margin: 0;
+  flex: none;
+}
+
+
 table {
   width: 100%;
 }
