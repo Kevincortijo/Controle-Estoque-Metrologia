@@ -4,12 +4,12 @@ import { Login } from '../pages/login/login.component';
 import { Moving } from '../pages/moving/moving.component';
 import { Overview } from '../pages/overview/overview.component';
 import { Register } from '../pages/register/register.component';
-import { Table } from '../components/table/table.component';
 import { Sidenav } from '../components/sidenav/sidenav.component';
 import { Report } from '../pages/report/report.component';
 import { Solicitation } from '../pages/solicitation/solicitation.component';
 import { MaterialOutput } from '../pages/material-output/material-output.component';
 import { Dashboard } from '../components/dashboard/dashboard.component';
+import { UserRegistration } from '../pages/user-registration/user-registration.component';
 
 export const routes: Routes = [
     {path:'login', component:Login},
@@ -21,10 +21,10 @@ export const routes: Routes = [
     {path:'solicitation', component: Solicitation},
     {path:'material-output', component: MaterialOutput},
     {path:'dashboard', component: Dashboard},
+    {path:'user-registration', component: UserRegistration},
 
     
     {path: 'sidenav-preview', component: Sidenav},
-    {path: 'table-preview', component: Table},
     
     {path:'', redirectTo:'login', pathMatch:'full'},
     {path:'**', redirectTo:'login'},

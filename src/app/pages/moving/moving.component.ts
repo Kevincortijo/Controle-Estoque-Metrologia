@@ -4,6 +4,7 @@ import {MatSort, MatSortModule} from '@angular/material/sort';
 import {MatTableDataSource, MatTableModule} from '@angular/material/table';
 import {MatInputModule} from '@angular/material/input';
 import {MatFormFieldModule} from '@angular/material/form-field';
+import { RouterModule } from '@angular/router';
 
 export interface UserData {
   id: string;
@@ -57,7 +58,8 @@ const NAMES: string[] = [
     MatInputModule,
     MatTableModule,
     MatSortModule,
-    MatPaginatorModule
+    MatPaginatorModule, 
+    RouterModule
   ],
 })
 
