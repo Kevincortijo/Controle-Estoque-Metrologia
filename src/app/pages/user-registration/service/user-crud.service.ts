@@ -47,11 +47,46 @@ export class UserService extends AbstractUserService{
     }
 
     override remove(id: number): Observable<OperationResult> {
-        return of()
+        return this.http.delete(
+            `${environment.apiUrl}/user/${id}`,
+            {observe:'response'}
+        ).pipe(
+            map(response => ({
+                success:response.status >= 200 && response.status <=300,
+                data: response.body,
+                status: response.status
+
+            })),
+            catchError((error:HttpErrorResponse)=>
+                of({
+                    success:false,
+                    status:error.status,
+                    data:error.message
+                })
+            )
+        )
     }
 
-    override update(user: User): Observable<OperationResult> {
-        return of()
+    override update(id:number, user: User): Observable<OperationResult> {
+        return this.http.put<User>(
+            `${environment.apiUrl}/user/${id}`,
+            user,
+            {observe:'response'}
+        ).pipe(
+            map(response => ({
+                success:response.status >= 200 && response.status <=300,
+                data: response.body,
+                status: response.status
+
+            })),
+            catchError((error:HttpErrorResponse)=>
+                of({
+                    success:false,
+                    status:error.status,
+                    data:error.message
+                })
+            )
+        )
     }
 
     override search(query: string): Observable<OperationResult> {
