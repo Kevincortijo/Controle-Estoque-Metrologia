@@ -12,7 +12,7 @@ import { error } from "console";
     providedIn:'root'
 })
 export class UserService extends AbstractUserService{
-    private _users = signal<UserCreate[]>([]);
+    private _users = signal<User[]>([]);
 
     users = computed(()=> this._users());
 
@@ -27,7 +27,7 @@ export class UserService extends AbstractUserService{
 
     override add(user: Omit<UserCreate, "id">): Observable<OperationResult> {
         return this.http.post<UserCreate>(
-            `${environment.apiUrl}/user`, 
+            `${environment.apiUrl}/user/register`, 
             user,
             {observe:'response'}
         ).pipe(
