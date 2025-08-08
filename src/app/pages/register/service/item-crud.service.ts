@@ -1,11 +1,14 @@
 import { AbstractItemService } from "./item-crud-abstract.service";
 import { computed, Injectable, signal } from "@angular/core";
-import { HttpClient } from "@angular/common/http";
-import { Observable, of } from "rxjs";
+import { HttpClient, HttpErrorResponse } from "@angular/common/http";
+import { catchError, map, Observable, of } from "rxjs";
 import { OperationResult } from "../../../model/operation-result.model";
 import { ItemCreate, Item } from "../../../model/item.model";
+import { environment } from "../../../../../environments/environments";
 
-@Injectable()
+@Injectable({
+    providedIn:'root'
+})
 export class ItemService extends AbstractItemService {
     private _items = signal<Item[]>([]);
 
@@ -20,8 +23,25 @@ export class ItemService extends AbstractItemService {
         
     }
 
-    override add(user: Omit<ItemCreate, "id">): Observable<OperationResult> {
-        return of()
+    override add(item: Omit<ItemCreate, "id">): Observable<OperationResult> {
+        return this.http.post<ItemCreate>(
+            `${environment.apiUrl}/items/register`,
+            item,
+            {observe:'response'}
+        ).pipe(
+            map(response=>({
+                success:response.status >= 200 && response.status <=300,
+                data: response.body,
+                status: response.status
+            })),
+            catchError((error:HttpErrorResponse)=>
+                of({
+                    success:false,
+                    status:error.status,
+                    data:error.message
+                })
+            )
+        )
     }
 
     override remove(id: number): Observable<OperationResult> {
