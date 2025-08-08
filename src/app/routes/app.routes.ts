@@ -8,7 +8,6 @@ import { Sidenav } from '../components/sidenav/sidenav.component';
 import { Report } from '../pages/report/report.component';
 import { Solicitation } from '../pages/solicitation/solicitation.component';
 import { MaterialOutput } from '../pages/material-output/material-output.component';
-import { Dashboard } from '../components/dashboard/dashboard.component';
 import { UserRegistration } from '../pages/user-registration/user-registration.component';
 
 export const routes: Routes = [
@@ -20,7 +19,6 @@ export const routes: Routes = [
     {path:'register', component: Register},
     {path:'solicitation', component: Solicitation},
     {path:'material-output', component: MaterialOutput},
-    {path:'dashboard', component: Dashboard},
     {path:'user-registration', component: UserRegistration},
 
     

@@ -1,29 +1,64 @@
-<!-- requisicao.component.html -->
-<div class="form-container">
-  <mat-form-field appearance="fill">
-    <mat-label>Usuário</mat-label>
-    <input matInput placeholder="Digite o nome do usuário">
-  </mat-form-field>
+<div class="resume">
+    <div class="cabecalho">
+      <h1>Solicitações</h1>
+      <div class="botoes">
+      <a routerLink="/register" class="button">
+        <img src="add.png" alt="add" class="icon"/>
+        Cadastro de Item
+      </a>
+      <button class="exportar">
+        <img src="excel.png" alt="Exportar" class="icon"/>
+        Exportar
+      </button>
 
-  <mat-form-field appearance="fill">
-    <mat-label>Setor</mat-label>
-    <input matInput placeholder="Digite o setor">
-  </mat-form-field>
+      </div>
+    </div>
+    <form>
+        <fieldset class="fieldset">
+            <legend>Solicitação de Item</legend>
+            <div class="cadastro">
 
-  <mat-form-field appearance="fill">
-    <mat-label>Item</mat-label>
-    <mat-select>
-      <mat-option *ngFor="let item of itens" [value]="item">{{ item }}</mat-option>
-    </mat-select>
-  </mat-form-field>
+                <div class="Nome_item">
+                  <mat-form-field>
+                    <mat-label>Itens</mat-label>
+                    <mat-select [formControl]="toppings" multiple>
+                      @for (topping of toppingList; track topping) {
+                    <mat-option [value]="topping">{{topping}}</mat-option>
+                  }</mat-select>
+                  </mat-form-field>
 
-  <mat-form-field appearance="fill">
-    <mat-label>Quantidade</mat-label>
-    <input matInput type="number" placeholder="0">
-  </mat-form-field>
+                </div>
 
-  <mat-form-field appearance="fill" class="justificativa">
-    <mat-label>Justificativa</mat-label>
-    <textarea matInput rows="5" placeholder="Descreva a justificativa"></textarea>
-  </mat-form-field>
+                <div class="quantidade">
+                    <label for="quantidade_item">Quantidade</label><br>
+                    <input type="number" class="number" id="Quantidade" placeholder="0">
+                </div>
+
+          
+                <div class="partnumber">
+                    <label for="partnumber">Linha</label><br>
+                    <input type="text" class="codigo" id="partnumber" placeholder="Código do Item">
+                </div>
+           
+
+            </div>
+            
+            
+            <div class="descricao">
+                <div class="descricao">
+                    <label for="descricao_item">Motivo</label><br>
+                    <textarea id="descricao_item" name="observacao" rows="5" cols="33" placeholder="Descreva o Motivo"></textarea>
+                </div>
+            </div>
+            
+                <button type="submit" class="btn btn-primary">Solicitar</button>
+                <button type="submit" class="btn btn-secundary">Cancelar</button>
+        </fieldset>
+    </form>
+
 </div>
+
+
+
+
+

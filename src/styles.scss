@@ -11,3 +11,11 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
       --font-family: 'Inter', sans-serif;
       --border-color: #0000003b;
     }
+
+.mdc-text-field--filled:not(.mdc-text-field--disabled) {
+  background-color: aqua;
+}
+
+.mat-mdc-form-field-type-mat-select:not(.mat-form-field-disabled) .mat-mdc-text-field-wrapper {
+    cursor: all-scroll;
+}

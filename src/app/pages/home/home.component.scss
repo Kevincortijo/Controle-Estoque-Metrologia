@@ -161,32 +161,22 @@ th {
   }
 }
 
-.tabela-resumos{
-  float:left;
-  width:47%;
-  border:solid 1px red;
-  margin-left:1%;
-  height:540px;
+.resumos {
+  display: flex;
+  justify-content: space-between;
+  gap: 1%; /* espaço entre eles */
+  height: 350px;
+  padding: 2rem;
 }
 
-.graficos-card{
-  float:left;
-  width:47%;
-  border:solid 1px red;
-  margin-left:1%;
-  height:540px;
+.grafico1,
+.grafico2 {
+  flex: 1;
+  
 }
 
-.grafico1{
-  float:left;
-  width:47%;
-  border:solid 1px blue;
-  margin-right:1%
-}
-
-.grafico2{
-  float:right;
-  width:47%;
-  border:solid 1px blue;
-  margin-right:1%
+.grafico1 canvas,
+.grafico2 canvas {
+  width: 100%;
+  height: 100% !important;
 }
